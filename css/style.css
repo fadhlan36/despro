@@ -185,6 +185,8 @@ a:focus {
     
     .navbar .navbar-brand {
         color: #ffffff;
+        margin: 0;
+        font-size: 30px;
     }
     
     .navbar.nav-sticky .navbar-brand {
@@ -223,6 +225,7 @@ a:focus {
     
     .navbar .navbar-brand {
         color: #EF233C;
+        font-size: 24px;
     }
     
     .navbar .navbar-nav {
@@ -1219,6 +1222,8 @@ a:focus {
 }
 
 
+
+
 /*******************************/
 /******* Testimonial CSS *******/
 /*******************************/
@@ -1322,13 +1327,13 @@ a:focus {
 
 .contact-btn .btn {
     display: inline-block;
-    padding: 20px 40px; /* Menambah padding untuk membuat tombol lebih besar */
-    background-color: #EF233C; /* Sesuaikan warna tombol */
-    color: #fff; /* Sesuaikan warna teks */
+    padding: 20px 40px; /* Padding default */
+    background-color: #EF233C; /* Warna tombol */
+    color: #fff; /* Warna teks */
     text-decoration: none;
-    border-radius: 38px; /* Sesuaikan border radius tombol */
-    font-size: 1.5em; /* Menambah ukuran font untuk memperbesar teks */
-    width: 300px; /* Lebar tetap tombol, bisa disesuaikan */
+    border-radius: 38px; /* Border radius tombol */
+    font-size: 1.5em; /* Ukuran font default */
+    width: 300px; /* Lebar tetap tombol */
     text-align: center; /* Memastikan teks di dalam tombol berada di tengah */
     transition: background-color 0.3s ease, color 0.3s ease; /* Menambahkan transisi untuk hover */
 }
@@ -1338,6 +1343,22 @@ a:focus {
     color: #EF233C;
 }
 
+/* Media Queries untuk ukuran layar yang lebih kecil */
+@media (max-width: 768px) {
+    .contact-btn .btn {
+        padding: 12px 24px;  /* Mengurangi padding untuk layar dengan lebar maksimal 768px */
+        font-size: 1.2em;    /* Mengurangi ukuran font untuk layar dengan lebar maksimal 768px */
+        width: 240px;        /* Mengurangi lebar tombol untuk layar dengan lebar maksimal 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-btn .btn {
+        padding: 16px 16px;   /* Mengurangi padding lebih jauh untuk layar dengan lebar maksimal 480px */
+        font-size: 1em;      /* Mengurangi ukuran font lebih jauh untuk layar dengan lebar maksimal 480px */
+        width: 200px;        /* Mengurangi lebar tombol lebih jauh untuk layar dengan lebar maksimal 480px */
+    }
+}
 
 .contact {
     position: relative;
@@ -1418,6 +1439,7 @@ a:focus {
         padding: 90px 0;
     }
 }
+
 
 
 /*******************************/
